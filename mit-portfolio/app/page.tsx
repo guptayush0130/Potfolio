@@ -2,7 +2,7 @@ import ProjectCard from '@/components/ProjectCard';
 import { projects } from '@/lib/data';
 
 // Profile photo URL - replace with your actual photo
-const PROFILE_PHOTO = 'https://placehold.co/200x200?text=Your+Photo';
+const PROFILE_PHOTO = '/images/profile_photo.jpeg';
 
 export default function Home() {
   return (
@@ -11,7 +11,7 @@ export default function Home() {
         {/* Header */}
         <header className="mb-16 text-center">
           <h1 className="text-4xl md:text-5xl font-bold text-slate-800 mb-3">
-            Your Name
+            Ayushman Gupta
           </h1>
           <p className="text-lg text-slate-500">
             Portfolio for MIT Media Lab
@@ -41,18 +41,17 @@ export default function Home() {
               About & Contact
             </h2>
             <p className="text-slate-500 leading-relaxed mb-6">
-              I am a researcher and designer passionate about exploring the
-              frontiers of human-computer interaction. My work investigates how
-              emerging technologies can be designed to enhance human capabilities
-              while respecting cognitive and social needs.
+              The world is changing and with the surmounting AI revolution, it is critical for children and young adults to be able to interact
+              with AI in a way that is safe and secure. This is where my work comes in. I am a builder who is a student at heart and want to use my technical
+              skills and passion for learning to build applications that help students understand the fundamentals of interacting with AI.
             </p>
             <p className="text-slate-500 text-sm">
               Get in touch:{' '}
               <a
-                href="mailto:your.email@example.com"
+                href="mailto:ayushmangupta2006@gmail.com"
                 className="text-blue-900 hover:underline font-medium"
               >
-                your.email@example.com
+                ayushmangupta2006@gmail.com
               </a>
             </p>
           </div>

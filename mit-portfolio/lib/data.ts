@@ -13,34 +13,34 @@ export interface Project {
 export const projects: Project[] = [
   {
     id: 'project-1',
-    title: 'Interactive Data Visualization Platform',
+    title: 'Constructionist Agent in Minecraft for AI Literacy',
     description:
-      'A comprehensive web-based platform designed to transform complex datasets into intuitive, interactive visual narratives. This project explores the intersection of human perception and data science, enabling users to discover patterns and insights through direct manipulation of visual elements. The system employs advanced rendering techniques and responsive design principles to ensure seamless experiences across devices, while maintaining accessibility standards for diverse user groups.',
-    mediaType: 'image',
-    mediaSrc: 'https://placehold.co/600x400',
-    additionalImages: [
-      'https://placehold.co/400x300?text=Detail+1',
-      'https://placehold.co/400x300?text=Detail+2',
-    ],
+      'A constructionist Agent in Minecraft that acts as a Socratic guide for students helping them form complex prompts and build structures such as houses, pyramids, etc while learning the fundamentals of mathematics and geometry.',
+    mediaType: 'video',
+    mediaSrc: 'https://www.youtube.com/embed/AHBXhTOUiqw',
+    //additionalImages: [
+      //'https://placehold.co/400x300?text=Detail+1',
+      //'https://placehold.co/400x300?text=Detail+2',
+    //],
     processNotes:
-      'Through iterative user testing, I discovered that reducing visual complexity by 40% significantly improved comprehension rates. Key learnings included the importance of progressive disclosure in data presentation and the value of customizable color palettes for accessibility. Future iterations will incorporate machine learning to suggest optimal visualization types based on data characteristics.',
-    processImages: [
-      'https://placehold.co/300x200?text=Sketch+1',
-      'https://placehold.co/300x200?text=Prototype',
-    ],
-    tags: ['React', 'D3.js', 'TypeScript', 'Canvas API', 'WebGL'],
+      'The first challenge was building the complex tool calling functionality by prompting the Agent to create a detailed JSON plan which could then be parsed and executed deterministically.\n The next challenge was to ensure reliability of the plan which was acheived by adding a Verifier Agent and a feedback loop mechanism inspired from GAN models. Finally the biggest challenge was to ensure that students could learn the fundamentals of prompting - to do this we took the approach of scaffolding the Agent allowing for students to interact with it to build complex structures - learning along the way the details that made the fundamentals of a good prompt ',
+    //processImages: [
+      //'https://placehold.co/300x200?text=Sketch+1',
+      //'https://placehold.co/300x200?text=Prototype',
+    //],
+    tags: ['Multi-Agent Systems', 'Constructionism','Scaffolding', 'Prompt Engineering', ],
   },
   {
     id: 'project-2',
-    title: 'Ambient Computing Interface Prototype',
+    title: 'Graph centric Query Answering System based on Multi-Modal data',
     description:
-      'An experimental interface exploring calm technology principles for ubiquitous computing environments. This research project investigates how digital information can be presented at the periphery of human attention, transitioning smoothly to the center when needed. The prototype demonstrates novel interaction paradigms that respect user cognitive load while maintaining awareness of relevant contextual information through subtle environmental cues.',
+      'AI system that answers search queries by building a knowledge-graph based on multi-modal data. It involves extracting Text Data using Parallel API and video data using Youtubtube Transcripts',
     mediaType: 'video',
-    mediaSrc: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
+    mediaSrc: 'https://www.youtube.com/embed/Hl90lyqkWjA',
     // No additional images for this project - demonstrating the optional field
     processNotes:
-      'Initial prototypes revealed that audio cues were more effective than visual ones for peripheral awareness. The development process emphasized rapid prototyping with Arduino sensors before transitioning to production-grade hardware. A significant insight was the need for personalization algorithms that adapt notification thresholds based on user activity patterns and stress indicators.',
+      'The main challeneges associated with this project were deciding how to rank different nodes which repsented entities - and due to the sparse nature of the graph I decide to use PageRank algorithm. The second challenge was determinging the relevant video contexts which involved crafting perfect queries for the Youtube API using an LLM',
     // No process images for this project - demonstrating the optional field
-    tags: ['Arduino', 'Python', 'TensorFlow', 'IoT', 'Processing'],
+    tags: ['PageRank','SBERT','Knowledge Graphs', 'Multi-Modal Data', 'Python'],
   },
 ];
